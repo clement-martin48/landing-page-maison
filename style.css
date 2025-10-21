@@ -1,0 +1,123 @@
+/* Base */
+body {
+  background-color: #f9f6ef;         /* beige doux */
+  color: #2e5339;                    /* vert bouteille */
+  font-family: 'Inter', Arial, sans-serif;  /* NOUVELLE POLICE texte */
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+h1, h2, h3 {
+  color: #2e5339;
+  letter-spacing: .3px;
+  text-align: center;
+  font-family: 'Merriweather', serif;       /* NOUVELLE POLICE titres */
+}
+
+h1 { font-size: 52px; margin: 0; }
+h2 { font-size: 28px; margin-bottom: 6px; }
+h3 { font-size: 20px; margin: 8px 0 0; }
+
+.lead { color: #4e6a59; text-align: center; }
+
+/* Container + cartes */
+.container { width: 950px; margin: 24px auto; }
+
+.card-white {
+  background: #fff;
+  border: 1px solid rgba(0,0,0,.08);
+  border-radius: 8px;
+  box-shadow: 0 6px 16px rgba(0,0,0,.08);
+  padding: 20px;
+  margin: 14px 0;
+}
+
+.text-center { text-align: center; }
+
+/* Bandeau */
+#banner {
+  background-image: url("images/barriques.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-bottom: 5px solid #c4733a; /* ton chaud terroir */
+}
+
+.banner-content { color: white; text-shadow: 0 2px 8px rgba(0,0,0,0.5); }
+.banner-content h1 { font-size: 64px; margin-bottom: 6px; }
+.banner-content p  { font-size: 20px; margin: 0; }
+
+/* Grille et cartes */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;  /* mieux centré */
+  margin: 10px -10px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid rgba(0,0,0,.08);
+  border-radius: 8px;
+  box-shadow: 0 6px 16px rgba(0,0,0,.06);
+  padding: 16px;
+  margin: 10px;
+  flex-basis: 280px;
+  flex-grow: 1;
+  text-align: center;
+  /* hover retiré (plus de “bouge”) */
+}
+
+/* Images */
+.img-circle {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 8px;
+  border: 4px solid #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,.15);
+}
+
+.thumb {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid rgba(0,0,0,.05);
+  margin-bottom: 8px;
+}
+
+.img-full {
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid rgba(0,0,0,.05);
+  margin-top: 10px;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  color: #2e5339;
+  font-size: 15px;
+  padding: 14px 0 20px;
+}
+
+/* Responsive */
+@media (max-width: 960px) { .container { width: 700px; } }
+@media (max-width: 720px) {
+  .container { width: 500px; }
+  #banner { height: 220px; }
+  .banner-content h1 { font-size: 46px; }
+}
+@media (max-width: 540px) {
+  .container { width: 320px; }
+  .banner-content h1 { font-size: 34px; }
+}
